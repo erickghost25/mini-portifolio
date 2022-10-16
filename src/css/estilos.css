@@ -1,0 +1,149 @@
+ body{
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    font-family: 'forum', monospace ;
+    color: #f3f3f3;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+ }
+
+ .cartao{
+    background-color: #070d12;
+    width: 370px;
+    border: 2px solid #e126d9;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* alinha horizontalmente por causa do flex-direction colum*/
+    gap: 10px;} /* determina o espaçamento entre os itens*/
+
+    .cartao .minhas-informacoes img{
+        border-radius: 60px; /* border-redius serve para dimensionar o raio dos itens */
+        border: 4px solid rgba(9, 196, 121, 0.8);
+        width: 120px;
+        height: 120px;
+    } 
+
+    .cartao .minhas-informacoes .nome{
+        font-size: 26px;
+        
+    }
+
+    .cartao .minhas-informacoes .cargo {
+        font-size: 20px;
+        color: #b8bbc5;
+     }
+
+     .cartao .conteudo{
+     
+        margin-top: 15px;
+     }
+
+     .cartao .abas{
+        display: flex;
+     }
+
+     .cartao .abas .aba{
+        width: 50%; 
+        display: flex;
+        justify-content: center; /*A propriedade CSS justify-content define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível e do eixo embutido de um contêiner de grade.*/
+
+        padding: 10px 0; /*padding(preenchimento) faz o preenchimento interno da "caixa"*/
+
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+
+     }
+
+     .cartao .abas img {
+        width: 30px ; /*determina a largura, enquanto heigth determina a altura*/ 
+    }
+
+    .cartao .abas .aba.selecionado{
+        background-color: #262626;
+    }
+
+    .cartao .informacoes-abas{
+        background-color: #262626;
+    }
+
+    .cartao .abas .aba:hover{ /*hover é uma pseudo classe como o significado de 'passar por cima'*/
+        background-color: #414141;
+    }
+
+    .informacoes-abas .informacao{
+        min-height: 260px;
+        padding: 15px;
+        display: none;
+    }
+     
+    .informacoes-abas .informacao.selecionado{
+        display: block;
+    }
+
+        .informacoes-abas .sub-titulo{
+            font-size: 22px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .informacoes-abas .descricao{
+            font-size: 20px;
+            max-height: 180px;
+            overflow-y: auto; /*overflow meio que serve pra esconder o que passar das margens*/
+            padding-right: 15px;
+
+        }
+
+        .informacoes-abas .descricao span{
+            color: #02d08f;
+        }
+        
+        .redes-sociais{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            max-height: 180px;
+            overflow-y: auto;
+            margin-top: 15px;
+        }
+        
+        .redes-sociais li a{    
+            width: 250px;
+            display: block;
+            color: #f3f3f3;
+            text-align: center;
+            padding: 10px;
+            font-size: 20px;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .redes-sociais li a:hover{
+            opacity: 0.5;
+        }
+        
+        
+        .redes-sociais .linkedin{
+            background-color: #0290d7c0;
+        }
+        
+        .redes-sociais .github{
+            background-color: #000000;
+        }
+
+    
